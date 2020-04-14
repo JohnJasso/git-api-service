@@ -1,0 +1,22 @@
+{
+  "name": "git-api",
+  "version": "1.0.0",
+  "description": "HTTP API that bookmarks repositories on GitHub",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "REST",
+    "API",
+    "bookmarks",
+    "star"
+  ],
+  "author": "Juan Guillermo Jasso Avila",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  }
+}
