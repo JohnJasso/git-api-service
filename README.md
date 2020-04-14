@@ -25,11 +25,11 @@ API Created to consume the GitHub API and handle searching repositories and hand
 ## END-Points
 
  - **GET** */api/search-repo?term=[search_term]*
-	Where ***search-term*** is what we wish to send as search query to search repositories by those keywords
+	Where ***search-term*** is what we wish to send as search query. Repositories will be searched by the specified keywords:
 	- Results are sorted by stars in a descending order
 	- Separate keywords with a **+** sing
 	- You can specify *topics* and *languages* in the following way:
-		> Each of this instances is considered a keyword and should be separated by a ***+*** sign:
+		> Each of these instances is considered a keyword and should be separated by a ***+*** sign:
 		> */api/search-repo?term=tetris+language:c+topic:game*
 - **GET** */api/bookmarks*
 	Used to return all bookmarks of the specified user
@@ -43,5 +43,5 @@ API Created to consume the GitHub API and handle searching repositories and hand
 	> /api/bookmark-repo/95875527
 	
 
-> PUT and DELETE request can be made using the popular [Postman
+> PUT and DELETE requests can be made using the popular [Postman
 > Application (browser extensions also exist)](https://www.postman.com)
