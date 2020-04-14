@@ -2,7 +2,7 @@ const Joi = require("@hapi/joi");
 
 function validateSearch(query) {
     const schema = Joi.object({
-      term: Joi.string().alphanum().required()
+      term: Joi.string().required()
     });
 
     return schema.validate(query);

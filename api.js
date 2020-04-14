@@ -21,8 +21,9 @@ router.route("/search-repo")
               'A search query should be included and defined as "?term=[searchquery]"'
             );
         } else {
+          const query = req.query.term.replace(/ /g, '+');
           try {
-            const response = await exploiter.search(req.query.term);
+            const response = await exploiter.search(query);
             if (!response) res.status(400).send("Not found");
             else res.status(200).send(response);
           } catch (error) {
