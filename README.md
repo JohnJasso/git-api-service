@@ -26,6 +26,7 @@ API Created to consume the GitHub API and handle searching repositories and hand
 
  - **GET** */api/search-repo?term=[search_term]*
 	Where ***search-term*** is what we wish to send as search query to search repositories by those keywords
+	- Results are sorted by stars in a descending order
 	- Separate keywords with a **+** sing
 	- You can specify *topics* and *languages* in the following way:
 		> Each of this instances is considered a keyword and should be separated by a ***+*** sign:
